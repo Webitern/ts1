@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090909">
+<title>Trinate Studios</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #090909;
+    color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 28px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 105px 20px 85px;
+}
+
+.hero .label {
+    color: #999;
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 82px);
+    letter-spacing: -3px;
+    margin-bottom: 22px;
+}
+
+.hero p {
+    color: #999;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.books {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px 100px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #292929;
+    padding-bottom: 20px;
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+.section-heading span {
+    color: #777;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.book-card {
+    background: #101010;
+    border: 1px solid #272727;
+    padding: 35px 25px;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: border-color 0.25s, transform 0.25s;
+}
+
+.book-card:hover {
+    border-color: #777;
+    transform: translateY(-5px);
+}
+
+.book-number {
+    color: #666;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.book-card h3 {
+    font-size: clamp(20px, 2.5vw, 28px);
+    line-height: 1.3;
+    margin: 35px 0;
+}
+
+.read-button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #f3f3f3;
+    color: #090909;
+    border: 1px solid #f3f3f3;
+    padding: 15px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.read-button:hover {
+    background: transparent;
+    color: white;
+}
+
+footer {
+    border-top: 1px solid #222;
+    padding: 28px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    color: #777;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 22px 6%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-right: 16px;
+        font-size: 11px;
+    }
+
+    .hero {
+        padding: 75px 20px 65px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .book-card {
+        min-height: 210px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">TRINATE STUDIOS</div>
+
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#books">BOOKS</a>
+        <a href="#footer">CONTACT</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="label">WELCOME TO</div>
+        <h1>Trinate Studios.</h1>
+        <p>A home for original stories.</p>
+    </section>
+
+    <section class="books" id="books">
+        <div class="section-heading">
+            <h2>OUR BOOKS</h2>
+            <span>01 — 03</span>
+        </div>
+
+        <div class="book-grid">
+
+            <article class="book-card">
+                <div class="book-number">BOOK 01</div>
+                <h3>Zairyo Tensei</h3>
+                <a class="read-button"
+                   href="https://vahint.github.io/ZT"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    READ NOW →
+                </a>
+            </article>
+
+            <article class="book-card">
+                <div class="book-number">BOOK 02</div>
+                <h3>Galactic Warriors</h3>
+                <a class="read-button"
+                   href="https://www.royalroad.com/fiction/196294/galactic-warriors?utm_source=home&utm_medium=reading-history"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    READ NOW →
+                </a>
+            </article>
+
+            <article class="book-card">
+                <div class="book-number">BOOK 03</div>
+                <h3>Valkari</h3>
+                <a class="read-button"
+                   href="https://pastebin.com/raw/JqdePX75"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    READ NOW →
+                </a>
+            </article>
+
+        </div>
+    </section>
+</main>
+
+<footer id="footer">
+    <span>TRINATE STUDIOS</span>
+    <span>© 2026 TRINATE STUDIOS</span>
+</footer>
+
+</body>
+</html>
